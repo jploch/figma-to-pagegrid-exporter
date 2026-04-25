@@ -1,6 +1,6 @@
 {
   "name": "Figma to PageGrid Exporter",
-  "id": "pagegrid-exporter-124",
+  "id": "figma-to-pagegrid-exporter",
   "api": "1.0.0",
   "ui": "ui.html",
   "main": "code.js",

@@ -20,11 +20,6 @@
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
-  h3 { margin-top: 0; font-size: 16px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-  
-  .section { margin-bottom: 0; }
-  .label { font-size: 12px; font-weight: bold; color: #888; margin-bottom: 8px; display: block; }
-  
   button { 
     width: 100%; 
     padding: 12px; 
@@ -45,23 +40,34 @@
   
   .status {
     font-size: 11px;
-    margin-top: 8px;
+    margin-bottom: 8px;
     padding: 8px;
     color: #555;
     text-align: center;
   }
+  .docs {
+    margin-top: 14px;
+    text-align: center;
+  }
+  .docs a {
+    font-size: 11px;
+    color: #888;
+    text-decoration: none;
+  }
+  .docs a:hover { color: #333; }
   .icon { font-size: 16px; }
 </style>
 
 <div class="container">
-  <h3>Export to PageGrid</h3>
-  
   <div class="section">
-    <span class="label">Download JSON + Images as ZIP</span>
+    <div class="status" id="zipStatus">Select a frame in Figma to get started</div>
     <button id="zipBtn" disabled>
-      <span class="icon">📦</span> Download .ZIP
+      <span class="icon">📦</span> Export .ZIP
     </button>
-    <div class="status" id="zipStatus">Processing images...</div>
+  </div>
+
+  <div class="docs">
+    <a href="https://page-grid.com/docs/figmaimport/" target="_blank">📖 Documentation</a>
   </div>
 </div>
 

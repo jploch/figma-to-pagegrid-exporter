@@ -246,7 +246,7 @@ async function doExport() {
 }
 
 function runExport() {
-  figma.showUI(__html__, { width: 320, height: 230, title: "Export to PageGrid" });
+  figma.showUI(__html__, { width: 320, height: 190, title: "Export to PageGrid" });
   doExport();
   figma.on('selectionchange', doExport);
 }
