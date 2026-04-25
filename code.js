@@ -42,15 +42,31 @@ function isVectorGroup(node) {
 // Extends VECTOR_TYPES to include RECTANGLE for composite shape detection.
 const ALL_SHAPE_TYPES = new Set([...VECTOR_TYPES, "RECTANGLE"]);
 
-// Returns true for GROUP nodes that are made entirely of shape children
-// (including RECTANGLEs) and contain more than one RECTANGLE.
+// Returns true if a node and its entire subtree contain only shapes or
+// groups of shapes — no TEXT, FRAME, or other non-shape nodes.
+function isShapeSubtree(node) {
+  if (ALL_SHAPE_TYPES.has(node.type)) return true;
+  if (node.type === "GROUP" && node.children)
+    return node.children.every(child => isShapeSubtree(child));
+  return false;
+}
+
+// Counts RECTANGLE nodes anywhere in the subtree (recursively).
+function countRectanglesInSubtree(node) {
+  if (node.type === "RECTANGLE") return 1;
+  if (node.type === "GROUP" && node.children)
+    return node.children.reduce((sum, c) => sum + countRectanglesInSubtree(c), 0);
+  return 0;
+}
+
+// Returns true for GROUP nodes whose entire subtree contains only shapes
+// and has at least 2 RECTANGLEs anywhere within it.
 // These represent composite shapes that should be captured as a single SVG.
 function isCompositeShapeGroup(node) {
   if (node.type !== "GROUP") return false;
   if (!node.children || node.children.length === 0) return false;
-  const rectangleCount = node.children.filter(c => c.type === "RECTANGLE").length;
-  if (rectangleCount < 2) return false;
-  return node.children.every(c => ALL_SHAPE_TYPES.has(c.type) || isCompositeShapeGroup(c));
+  if (!node.children.every(c => isShapeSubtree(c))) return false;
+  return countRectanglesInSubtree(node) >= 2;
 }
 
 // --- MAIN SERIALIZATION ---
