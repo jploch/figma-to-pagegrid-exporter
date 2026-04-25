@@ -39,6 +39,20 @@ function isVectorGroup(node) {
   return node.children.every(child => isVectorType(child) || isVectorGroup(child));
 }
 
+// Extends VECTOR_TYPES to include RECTANGLE for composite shape detection.
+const ALL_SHAPE_TYPES = new Set([...VECTOR_TYPES, "RECTANGLE"]);
+
+// Returns true for GROUP nodes that are made entirely of shape children
+// (including RECTANGLEs) and contain more than one RECTANGLE.
+// These represent composite shapes that should be captured as a single SVG.
+function isCompositeShapeGroup(node) {
+  if (node.type !== "GROUP") return false;
+  if (!node.children || node.children.length === 0) return false;
+  const rectangleCount = node.children.filter(c => c.type === "RECTANGLE").length;
+  if (rectangleCount < 2) return false;
+  return node.children.every(c => ALL_SHAPE_TYPES.has(c.type) || isCompositeShapeGroup(c));
+}
+
 // --- MAIN SERIALIZATION ---
 
 async function serializeToMCP(node) {
@@ -153,9 +167,24 @@ async function serializeToMCP(node) {
       const safeName = node.name.replace(/[^a-z0-9]/gi, '_').toLowerCase() + "_" + node.id.replace(":", "-");
       imageCollector.push({ name: safeName, svgString: svgString, format: 'svg' });
       obj.mcp_svg_url = `assets/${safeName}.svg`;
+      if (node.type !== "LINE") obj.type = "IMAGE";
       // Skip recursion — the whole node is captured in the SVG
       return obj;
     } catch (e) { console.error("SVG Error", e); }
+  }
+
+  // 2b. COMPOSITE SHAPE GROUP EXPORT
+  // GROUP with >1 RECTANGLE where all children are shape types → export as single SVG
+  if (isCompositeShapeGroup(node)) {
+    try {
+      const svgString = await node.exportAsync({ format: 'SVG_STRING' });
+      const safeName = node.name.replace(/[^a-z0-9]/gi, '_').toLowerCase() + "_" + node.id.replace(":", "-");
+      imageCollector.push({ name: safeName, svgString: svgString, format: 'svg' });
+      obj.mcp_svg_url = `assets/${safeName}.svg`;
+      obj.type = "IMAGE";
+      // Skip recursion — the whole group is captured in the SVG
+      return obj;
+    } catch (e) { console.error("SVG Error (composite shape group)", e); }
   }
   
   // 3. IMAGE EXPORT (Sammler-Logik statt Base64)
