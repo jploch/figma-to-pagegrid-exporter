@@ -1,0 +1,10 @@
+{
+  "name": "Figma to PageGrid Exporter",
+  "id": "pagegrid-exporter-124",
+  "api": "1.0.0",
+  "ui": "ui.html",
+  "main": "code.js",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "editorType": ["figma"]
+}

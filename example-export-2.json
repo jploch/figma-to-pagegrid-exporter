@@ -1,0 +1,4419 @@
+{
+  "id": "3077:685",
+  "name": "MacBook Air - 298",
+  "type": "FRAME",
+  "absoluteBoundingBox": {
+    "x": 9999.3994140625,
+    "y": -36079,
+    "width": 1280,
+    "height": 3185
+  },
+  "fills": [
+    {
+      "type": "SOLID",
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "NORMAL",
+      "color": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "boundVariables": {}
+    }
+  ],
+  "layoutGrids": [
+    {
+      "pattern": "COLUMNS",
+      "visible": true,
+      "alignment": "STRETCH",
+      "gutterSize": 20,
+      "offset": 20,
+      "count": 12
+    }
+  ],
+  "children": [
+    {
+      "id": "5018:62",
+      "name": "Group 223",
+      "type": "GROUP",
+      "absoluteBoundingBox": {
+        "x": 19.6005859375,
+        "y": 467.44140625,
+        "width": 1261.1982421875,
+        "height": 596.24609375
+      },
+      "fills": [],
+      "layoutGrids": [],
+      "children": [
+        {
+          "id": "5018:60",
+          "name": "Group 221",
+          "type": "GROUP",
+          "absoluteBoundingBox": {
+            "x": 440,
+            "y": 467.44140625,
+            "width": 420.3994140625,
+            "height": 576.24609375
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [
+            {
+              "id": "4604:129",
+              "name": "Group 197",
+              "type": "GROUP",
+              "absoluteBoundingBox": {
+                "x": 440,
+                "y": 512.71875,
+                "width": 420.3994140625,
+                "height": 336.92578125
+              },
+              "fills": [],
+              "layoutGrids": [],
+              "children": [
+                {
+                  "id": "4604:126",
+                  "name": "Rectangle 288",
+                  "type": "RECTANGLE",
+                  "absoluteBoundingBox": {
+                    "x": 440,
+                    "y": 512.71875,
+                    "width": 420.3994140625,
+                    "height": 336.92578125
+                  },
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 0,
+                        "g": 0,
+                        "b": 0
+                      },
+                      "boundVariables": {}
+                    }
+                  ],
+                  "layoutGrids": [],
+                  "children": []
+                },
+                {
+                  "id": "3290:1182",
+                  "name": "Group 146",
+                  "type": "GROUP",
+                  "absoluteBoundingBox": {
+                    "x": 526.7626953125,
+                    "y": 557.7421875,
+                    "width": 246.8745880126953,
+                    "height": 246.8775177001953
+                  },
+                  "fills": [],
+                  "layoutGrids": [],
+                  "children": [
+                    {
+                      "id": "3290:1166",
+                      "name": "Group 99",
+                      "type": "GROUP",
+                      "absoluteBoundingBox": {
+                        "x": 526.7631072998047,
+                        "y": 593.0105895996094,
+                        "width": 105.80329895019531,
+                        "height": 105.80329895019531
+                      },
+                      "fills": [],
+                      "layoutGrids": [],
+                      "children": [
+                        {
+                          "id": "3290:1167",
+                          "name": "Rectangle 99",
+                          "type": "RECTANGLE",
+                          "absoluteBoundingBox": {
+                            "x": 526.763427734375,
+                            "y": 628.2798004150391,
+                            "width": 105.80329895019531,
+                            "height": 35.26777267456055
+                          },
+                          "fills": [
+                            {
+                              "type": "SOLID",
+                              "visible": true,
+                              "opacity": 1,
+                              "blendMode": "NORMAL",
+                              "color": {
+                                "r": 1,
+                                "g": 1,
+                                "b": 1
+                              },
+                              "boundVariables": {}
+                            }
+                          ],
+                          "layoutGrids": [],
+                          "children": [],
+                          "rotation": -9.213866198408551e-15
+                        },
+                        {
+                          "id": "3290:1168",
+                          "name": "Rectangle 100",
+                          "type": "RECTANGLE",
+                          "absoluteBoundingBox": {
+                            "x": 562.0307769775391,
+                            "y": 698.8158416748047,
+                            "width": 105.80329895019531,
+                            "height": 35.26777267456055
+                          },
+                          "fills": [
+                            {
+                              "type": "SOLID",
+                              "visible": true,
+                              "opacity": 1,
+                              "blendMode": "NORMAL",
+                              "color": {
+                                "r": 1,
+                                "g": 1,
+                                "b": 1
+                              },
+                              "boundVariables": {}
+                            }
+                          ],
+                          "layoutGrids": [],
+                          "children": [],
+                          "rotation": 90.00000250447808
+                        }
+                      ]
+                    },
+                    {
+                      "id": "3290:1173",
+                      "name": "Group 132",
+                      "type": "GROUP",
+                      "absoluteBoundingBox": {
+                        "x": 632.56640625,
+                        "y": 557.743263166165,
+                        "width": 105.80329895019531,
+                        "height": 105.80329895019531
+                      },
+                      "fills": [],
+                      "layoutGrids": [],
+                      "children": [
+                        {
+                          "id": "3290:1174",
+                          "name": "Rectangle 99",
+                          "type": "RECTANGLE",
+                          "absoluteBoundingBox": {
+                            "x": 632.5667266845703,
+                            "y": 593.0126265694853,
+                            "width": 105.80329895019531,
+                            "height": 35.26777267456055
+                          },
+                          "fills": [
+                            {
+                              "type": "SOLID",
+                              "visible": true,
+                              "opacity": 1,
+                              "blendMode": "NORMAL",
+                              "color": {
+                                "r": 1,
+                                "g": 1,
+                                "b": 1
+                              },
+                              "boundVariables": {}
+                            }
+                          ],
+                          "layoutGrids": [],
+                          "children": [],
+                          "rotation": -9.213866198408551e-15
+                        },
+                        {
+                          "id": "3290:1175",
+                          "name": "Rectangle 100",
+                          "type": "RECTANGLE",
+                          "absoluteBoundingBox": {
+                            "x": 667.8340759277344,
+                            "y": 663.5482863595244,
+                            "width": 105.80329895019531,
+                            "height": 35.26777267456055
+                          },
+                          "fills": [
+                            {
+                              "type": "SOLID",
+                              "visible": true,
+                              "opacity": 1,
+                              "blendMode": "NORMAL",
+                              "color": {
+                                "r": 1,
+                                "g": 1,
+                                "b": 1
+                              },
+                              "boundVariables": {}
+                            }
+                          ],
+                          "layoutGrids": [],
+                          "children": [],
+                          "rotation": 90.00000250447808
+                        }
+                      ]
+                    },
+                    {
+                      "id": "3290:1176",
+                      "name": "Group 133",
+                      "type": "GROUP",
+                      "absoluteBoundingBox": {
+                        "x": 667.833984375,
+                        "y": 663.5518035888672,
+                        "width": 105.80329895019531,
+                        "height": 105.80329895019531
+                      },
+                      "fills": [],
+                      "layoutGrids": [],
+                      "children": [
+                        {
+                          "id": "3290:1177",
+                          "name": "Rectangle 99",
+                          "type": "RECTANGLE",
+                          "absoluteBoundingBox": {
+                            "x": 667.8343048095703,
+                            "y": 698.8184661865234,
+                            "width": 105.80329895019531,
+                            "height": 35.26777267456055
+                          },
+                          "fills": [
+                            {
+                              "type": "SOLID",
+                              "visible": true,
+                              "opacity": 1,
+                              "blendMode": "NORMAL",
+                              "color": {
+                                "r": 1,
+                                "g": 1,
+                                "b": 1
+                              },
+                              "boundVariables": {}
+                            }
+                          ],
+                          "layoutGrids": [],
+                          "children": [],
+                          "rotation": -9.213866198408551e-15
+                        },
+                        {
+                          "id": "3290:1178",
+                          "name": "Rectangle 100",
+                          "type": "RECTANGLE",
+                          "absoluteBoundingBox": {
+                            "x": 703.1016540527344,
+                            "y": 769.3541259765625,
+                            "width": 105.80329895019531,
+                            "height": 35.26777267456055
+                          },
+                          "fills": [
+                            {
+                              "type": "SOLID",
+                              "visible": true,
+                              "opacity": 1,
+                              "blendMode": "NORMAL",
+                              "color": {
+                                "r": 1,
+                                "g": 1,
+                                "b": 1
+                              },
+                              "boundVariables": {}
+                            }
+                          ],
+                          "layoutGrids": [],
+                          "children": [],
+                          "rotation": 90.00000250447808
+                        }
+                      ]
+                    },
+                    {
+                      "id": "3290:1179",
+                      "name": "Group 134",
+                      "type": "GROUP",
+                      "absoluteBoundingBox": {
+                        "x": 562.0306816101074,
+                        "y": 698.8152770996094,
+                        "width": 105.80329895019531,
+                        "height": 105.80329895019531
+                      },
+                      "fills": [],
+                      "layoutGrids": [],
+                      "children": [
+                        {
+                          "id": "3290:1180",
+                          "name": "Rectangle 99",
+                          "type": "RECTANGLE",
+                          "absoluteBoundingBox": {
+                            "x": 562.0310020446777,
+                            "y": 734.0841979980469,
+                            "width": 105.80329895019531,
+                            "height": 35.26777267456055
+                          },
+                          "fills": [
+                            {
+                              "type": "SOLID",
+                              "visible": true,
+                              "opacity": 1,
+                              "blendMode": "NORMAL",
+                              "color": {
+                                "r": 1,
+                                "g": 1,
+                                "b": 1
+                              },
+                              "boundVariables": {}
+                            }
+                          ],
+                          "layoutGrids": [],
+                          "children": [],
+                          "rotation": -9.213866198408551e-15
+                        },
+                        {
+                          "id": "3290:1181",
+                          "name": "Rectangle 100",
+                          "type": "RECTANGLE",
+                          "absoluteBoundingBox": {
+                            "x": 597.2983512878418,
+                            "y": 804.6198577880859,
+                            "width": 105.80329895019531,
+                            "height": 35.26777267456055
+                          },
+                          "fills": [
+                            {
+                              "type": "SOLID",
+                              "visible": true,
+                              "opacity": 1,
+                              "blendMode": "NORMAL",
+                              "color": {
+                                "r": 1,
+                                "g": 1,
+                                "b": 1
+                              },
+                              "boundVariables": {}
+                            }
+                          ],
+                          "layoutGrids": [],
+                          "children": [],
+                          "rotation": 90.00000250447808
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3084:815",
+              "name": "Design",
+              "type": "TEXT",
+              "absoluteBoundingBox": {
+                "x": 459.4423828125,
+                "y": 467.44140625,
+                "width": 375.115234375,
+                "height": 20
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "layoutGrids": [],
+              "children": [],
+              "characters": "Design",
+              "textSegments": [
+                {
+                  "characters": "Design",
+                  "fontSize": 14,
+                  "fontFamily": "PP Object Sans",
+                  "fontWeight": "Regular",
+                  "lineHeight": {
+                    "unit": "PERCENT",
+                    "value": 139.9999976158142
+                  },
+                  "lineHeightPx": 19.59999966621399,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "textDecoration": "NONE",
+                  "textCase": "ORIGINAL",
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "boundVariables": {}
+                    }
+                  ]
+                }
+              ],
+              "style": {
+                "fontFamily": "PP Object Sans",
+                "fontSize": 14,
+                "lineHeight": {
+                  "unit": "PERCENT",
+                  "value": 139.9999976158142
+                },
+                "textAlign": "LEFT",
+                "textAlignVertical": "TOP",
+                "paragraphSpacing": 0,
+                "paragraphIndent": 0,
+                "opacity": 1
+              }
+            },
+            {
+              "id": "3292:1266",
+              "name": "→ Corporate Design → Editorial Design → Motion Design → Typografie → User Experience (UX/UI) → Accessibility → Prototyping → Web & App Design",
+              "type": "TEXT",
+              "absoluteBoundingBox": {
+                "x": 455.37109375,
+                "y": 883.6875,
+                "width": 360.966796875,
+                "height": 160
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "layoutGrids": [],
+              "children": [],
+              "characters": "→ Corporate Design\n→ Editorial Design\n→ Motion Design\n→ Typografie\n→ User Experience (UX/UI)\n→ Accessibility\n→ Prototyping\n→ Web & App Design",
+              "textSegments": [
+                {
+                  "characters": "→ Corporate Design\n→ Editorial Design\n→ Motion Design\n→ Typografie\n→ User Experience (UX/UI)\n→ Accessibility\n→ Prototyping\n→ Web & App Design",
+                  "fontSize": 14,
+                  "fontFamily": "PP Object Sans",
+                  "fontWeight": "Regular",
+                  "lineHeight": {
+                    "unit": "PERCENT",
+                    "value": 139.9999976158142
+                  },
+                  "lineHeightPx": 19.59999966621399,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "textDecoration": "NONE",
+                  "textCase": "ORIGINAL",
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "boundVariables": {}
+                    }
+                  ]
+                }
+              ],
+              "style": {
+                "fontFamily": "PP Object Sans",
+                "fontSize": 14,
+                "lineHeight": {
+                  "unit": "PERCENT",
+                  "value": 139.9999976158142
+                },
+                "textAlign": "LEFT",
+                "textAlignVertical": "TOP",
+                "paragraphSpacing": 0,
+                "paragraphIndent": 0,
+                "opacity": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "5018:59",
+          "name": "Group 220",
+          "type": "GROUP",
+          "absoluteBoundingBox": {
+            "x": 19.6005859375,
+            "y": 467.44140625,
+            "width": 420.3994140625,
+            "height": 596.24609375
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [
+            {
+              "id": "4604:128",
+              "name": "Group 196",
+              "type": "GROUP",
+              "absoluteBoundingBox": {
+                "x": 19.6005859375,
+                "y": 512.71875,
+                "width": 420.3994140625,
+                "height": 336.92578125
+              },
+              "fills": [],
+              "layoutGrids": [],
+              "children": [
+                {
+                  "id": "4604:125",
+                  "name": "Rectangle 287",
+                  "type": "RECTANGLE",
+                  "absoluteBoundingBox": {
+                    "x": 19.6005859375,
+                    "y": 512.71875,
+                    "width": 420.3994140625,
+                    "height": 336.92578125
+                  },
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 0,
+                        "g": 0,
+                        "b": 0
+                      },
+                      "boundVariables": {}
+                    }
+                  ],
+                  "layoutGrids": [],
+                  "children": []
+                },
+                {
+                  "id": "3287:1124",
+                  "name": "Group 131",
+                  "type": "GROUP",
+                  "absoluteBoundingBox": {
+                    "x": 74.6103515625,
+                    "y": 595.2265625,
+                    "width": 310.3792724609375,
+                    "height": 171.9122314453125
+                  },
+                  "fills": [],
+                  "layoutGrids": [],
+                  "children": [
+                    {
+                      "id": "3287:1125",
+                      "name": "Rectangle 115",
+                      "type": "RECTANGLE",
+                      "absoluteBoundingBox": {
+                        "x": 178.070556640625,
+                        "y": 595.2265625,
+                        "width": 103.45933532714844,
+                        "height": 34.486454010009766
+                      },
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "visible": true,
+                          "opacity": 1,
+                          "blendMode": "NORMAL",
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1
+                          },
+                          "boundVariables": {}
+                        }
+                      ],
+                      "layoutGrids": [],
+                      "children": [],
+                      "rotation": -9.213866198408551e-15
+                    },
+                    {
+                      "id": "3287:1126",
+                      "name": "Rectangle 106",
+                      "type": "RECTANGLE",
+                      "absoluteBoundingBox": {
+                        "x": 74.6103515625,
+                        "y": 629.728084564209,
+                        "width": 103.45933532714844,
+                        "height": 34.486454010009766
+                      },
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "visible": true,
+                          "opacity": 1,
+                          "blendMode": "NORMAL",
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1
+                          },
+                          "boundVariables": {}
+                        }
+                      ],
+                      "layoutGrids": [],
+                      "children": [],
+                      "rotation": -9.213866198408551e-15
+                    },
+                    {
+                      "id": "3287:1127",
+                      "name": "Rectangle 112",
+                      "type": "RECTANGLE",
+                      "absoluteBoundingBox": {
+                        "x": 74.6103515625,
+                        "y": 698.7158355712891,
+                        "width": 103.45933532714844,
+                        "height": 34.486454010009766
+                      },
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "visible": true,
+                          "opacity": 1,
+                          "blendMode": "NORMAL",
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1
+                          },
+                          "boundVariables": {}
+                        }
+                      ],
+                      "layoutGrids": [],
+                      "children": [],
+                      "rotation": -9.213866198408551e-15
+                    },
+                    {
+                      "id": "3287:1128",
+                      "name": "Rectangle 116",
+                      "type": "RECTANGLE",
+                      "absoluteBoundingBox": {
+                        "x": 178.070556640625,
+                        "y": 664.2143096923828,
+                        "width": 103.45933532714844,
+                        "height": 34.486454010009766
+                      },
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "visible": true,
+                          "opacity": 1,
+                          "blendMode": "NORMAL",
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1
+                          },
+                          "boundVariables": {}
+                        }
+                      ],
+                      "layoutGrids": [],
+                      "children": [],
+                      "rotation": -9.213866198408551e-15
+                    },
+                    {
+                      "id": "3287:1129",
+                      "name": "Rectangle 127",
+                      "type": "RECTANGLE",
+                      "absoluteBoundingBox": {
+                        "x": 178.070556640625,
+                        "y": 732.6513824462891,
+                        "width": 103.45933532714844,
+                        "height": 34.486454010009766
+                      },
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "visible": true,
+                          "opacity": 1,
+                          "blendMode": "NORMAL",
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1
+                          },
+                          "boundVariables": {}
+                        }
+                      ],
+                      "layoutGrids": [],
+                      "children": [],
+                      "rotation": -9.213866198408551e-15
+                    },
+                    {
+                      "id": "3287:1130",
+                      "name": "Rectangle 120",
+                      "type": "RECTANGLE",
+                      "absoluteBoundingBox": {
+                        "x": 281.53076171875,
+                        "y": 629.728084564209,
+                        "width": 103.45933532714844,
+                        "height": 34.486454010009766
+                      },
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "visible": true,
+                          "opacity": 1,
+                          "blendMode": "NORMAL",
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1
+                          },
+                          "boundVariables": {}
+                        }
+                      ],
+                      "layoutGrids": [],
+                      "children": [],
+                      "rotation": -9.213866198408551e-15
+                    },
+                    {
+                      "id": "3287:1131",
+                      "name": "Rectangle 121",
+                      "type": "RECTANGLE",
+                      "absoluteBoundingBox": {
+                        "x": 281.53076171875,
+                        "y": 698.7158355712891,
+                        "width": 103.45933532714844,
+                        "height": 34.486454010009766
+                      },
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "visible": true,
+                          "opacity": 1,
+                          "blendMode": "NORMAL",
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1
+                          },
+                          "boundVariables": {}
+                        }
+                      ],
+                      "layoutGrids": [],
+                      "children": [],
+                      "rotation": -9.213866198408551e-15
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3084:812",
+              "name": "Strategie",
+              "type": "TEXT",
+              "absoluteBoundingBox": {
+                "x": 35.37109375,
+                "y": 467.44140625,
+                "width": 375.115234375,
+                "height": 20
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "layoutGrids": [],
+              "children": [],
+              "characters": "Strategie",
+              "textSegments": [
+                {
+                  "characters": "Strategie",
+                  "fontSize": 14,
+                  "fontFamily": "PP Object Sans",
+                  "fontWeight": "Regular",
+                  "lineHeight": {
+                    "unit": "PERCENT",
+                    "value": 139.9999976158142
+                  },
+                  "lineHeightPx": 19.59999966621399,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "textDecoration": "NONE",
+                  "textCase": "ORIGINAL",
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "boundVariables": {}
+                    }
+                  ]
+                }
+              ],
+              "style": {
+                "fontFamily": "PP Object Sans",
+                "fontSize": 14,
+                "lineHeight": {
+                  "unit": "PERCENT",
+                  "value": 139.9999976158142
+                },
+                "textAlign": "LEFT",
+                "textAlignVertical": "TOP",
+                "paragraphSpacing": 0,
+                "paragraphIndent": 0,
+                "opacity": 1
+              }
+            },
+            {
+              "id": "3084:813",
+              "name": "→ Vertiefung & Analyse → Zielgruppen & User Research → Positionierung → Purpose & Narrative → Vision & Mission → Wertversprechen → Strategische Leitlinien → Markenarchitektur → Naming & Tone of Voice",
+              "type": "TEXT",
+              "absoluteBoundingBox": {
+                "x": 35.37109375,
+                "y": 883.6875,
+                "width": 360.966796875,
+                "height": 180
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "layoutGrids": [],
+              "children": [],
+              "characters": "→ Vertiefung & Analyse\n→ Zielgruppen & User Research\n→ Positionierung\n→ Purpose & Narrative\n→ Vision & Mission\n→ Wertversprechen\n→ Strategische Leitlinien\n→ Markenarchitektur\n→ Naming & Tone of Voice",
+              "textSegments": [
+                {
+                  "characters": "→ Vertiefung & Analyse\n→ Zielgruppen & User Research\n→ Positionierung\n→ Purpose & Narrative\n→ Vision & Mission\n→ Wertversprechen\n→ Strategische Leitlinien\n→ Markenarchitektur\n→ Naming & Tone of Voice",
+                  "fontSize": 14,
+                  "fontFamily": "PP Object Sans",
+                  "fontWeight": "Regular",
+                  "lineHeight": {
+                    "unit": "PERCENT",
+                    "value": 139.9999976158142
+                  },
+                  "lineHeightPx": 19.59999966621399,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "textDecoration": "NONE",
+                  "textCase": "ORIGINAL",
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "boundVariables": {}
+                    }
+                  ]
+                }
+              ],
+              "style": {
+                "fontFamily": "PP Object Sans",
+                "fontSize": 14,
+                "lineHeight": {
+                  "unit": "PERCENT",
+                  "value": 139.9999976158142
+                },
+                "textAlign": "LEFT",
+                "textAlignVertical": "TOP",
+                "paragraphSpacing": 0,
+                "paragraphIndent": 0,
+                "opacity": 1
+              }
+            },
+            {
+              "id": "3077:745",
+              "name": "Line 1",
+              "type": "LINE",
+              "absoluteBoundingBox": {
+                "x": 20,
+                "y": 467.44140625,
+                "width": 590.24609375,
+                "height": 0
+              },
+              "fills": [],
+              "layoutGrids": [],
+              "children": [],
+              "rotation": -90.00000250448296,
+              "strokes": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 0.30000001192092896,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "CENTER",
+              "mcp_svg_url": "assets/line_1_3077-745.svg"
+            }
+          ]
+        },
+        {
+          "id": "3077:746",
+          "name": "Line 2",
+          "type": "LINE",
+          "absoluteBoundingBox": {
+            "x": 440,
+            "y": 467.44140625,
+            "width": 590.24609375,
+            "height": 0
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [],
+          "rotation": -90.00000250448296,
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.30000001192092896,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokeWeight": 1,
+          "strokeAlign": "CENTER",
+          "mcp_svg_url": "assets/line_2_3077-746.svg"
+        },
+        {
+          "id": "5018:61",
+          "name": "Group 222",
+          "type": "GROUP",
+          "absoluteBoundingBox": {
+            "x": 860,
+            "y": 467.44140625,
+            "width": 420.7988586425781,
+            "height": 590.24609375
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [
+            {
+              "id": "4604:130",
+              "name": "Group 198",
+              "type": "GROUP",
+              "absoluteBoundingBox": {
+                "x": 860.3994398713112,
+                "y": 512.71875,
+                "width": 420.3994140625,
+                "height": 336.92578125
+              },
+              "fills": [],
+              "layoutGrids": [],
+              "children": [
+                {
+                  "id": "4604:127",
+                  "name": "Rectangle 289",
+                  "type": "RECTANGLE",
+                  "absoluteBoundingBox": {
+                    "x": 860.3994398713112,
+                    "y": 512.71875,
+                    "width": 420.3994140625,
+                    "height": 336.92578125
+                  },
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 0,
+                        "g": 0,
+                        "b": 0
+                      },
+                      "boundVariables": {}
+                    }
+                  ],
+                  "layoutGrids": [],
+                  "children": []
+                },
+                {
+                  "id": "4604:111",
+                  "name": "Group 195",
+                  "type": "GROUP",
+                  "absoluteBoundingBox": {
+                    "x": 984.3828383088112,
+                    "y": 577.72265625,
+                    "width": 172.43177795410156,
+                    "height": 206.92027282714844
+                  },
+                  "fills": [],
+                  "layoutGrids": [],
+                  "children": [
+                    {
+                      "id": "3290:1184",
+                      "name": "Rectangle 115",
+                      "type": "RECTANGLE",
+                      "absoluteBoundingBox": {
+                        "x": 1156.8146162629128,
+                        "y": 681.18359375,
+                        "width": 103.45933532714844,
+                        "height": 34.486454010009766
+                      },
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "visible": true,
+                          "opacity": 1,
+                          "blendMode": "NORMAL",
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1
+                          },
+                          "boundVariables": {}
+                        }
+                      ],
+                      "layoutGrids": [],
+                      "children": [],
+                      "rotation": -90.00000250447827
+                    },
+                    {
+                      "id": "3290:1185",
+                      "name": "Rectangle 106",
+                      "type": "RECTANGLE",
+                      "absoluteBoundingBox": {
+                        "x": 1122.3282881379128,
+                        "y": 577.7226577574475,
+                        "width": 103.45933532714844,
+                        "height": 34.486454010009766
+                      },
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "visible": true,
+                          "opacity": 1,
+                          "blendMode": "NORMAL",
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1
+                          },
+                          "boundVariables": {}
+                        }
+                      ],
+                      "layoutGrids": [],
+                      "children": [],
+                      "rotation": -90.00000250447827
+                    },
+                    {
+                      "id": "3290:1186",
+                      "name": "Rectangle 112",
+                      "type": "RECTANGLE",
+                      "absoluteBoundingBox": {
+                        "x": 1053.3556242585182,
+                        "y": 577.7226577574475,
+                        "width": 103.45933532714844,
+                        "height": 34.486454010009766
+                      },
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "visible": true,
+                          "opacity": 1,
+                          "blendMode": "NORMAL",
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1
+                          },
+                          "boundVariables": {}
+                        }
+                      ],
+                      "layoutGrids": [],
+                      "children": [],
+                      "rotation": -90.00000250447827
+                    },
+                    {
+                      "id": "3290:1187",
+                      "name": "Rectangle 116",
+                      "type": "RECTANGLE",
+                      "absoluteBoundingBox": {
+                        "x": 1087.8419523835182,
+                        "y": 681.18359375,
+                        "width": 103.45933532714844,
+                        "height": 34.486454010009766
+                      },
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "visible": true,
+                          "opacity": 1,
+                          "blendMode": "NORMAL",
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1
+                          },
+                          "boundVariables": {}
+                        }
+                      ],
+                      "layoutGrids": [],
+                      "children": [],
+                      "rotation": -90.00000250447827
+                    },
+                    {
+                      "id": "3290:1191",
+                      "name": "Rectangle 224",
+                      "type": "RECTANGLE",
+                      "absoluteBoundingBox": {
+                        "x": 1018.8692961335182,
+                        "y": 681.18359375,
+                        "width": 103.45933532714844,
+                        "height": 34.486454010009766
+                      },
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "visible": true,
+                          "opacity": 1,
+                          "blendMode": "NORMAL",
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1
+                          },
+                          "boundVariables": {}
+                        }
+                      ],
+                      "layoutGrids": [],
+                      "children": [],
+                      "rotation": -90.00000250447827
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3084:816",
+              "name": "Technologie",
+              "type": "TEXT",
+              "absoluteBoundingBox": {
+                "x": 879.4424095153809,
+                "y": 467.44140625,
+                "width": 375.115234375,
+                "height": 20
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "layoutGrids": [],
+              "children": [],
+              "characters": "Technologie",
+              "textSegments": [
+                {
+                  "characters": "Technologie",
+                  "fontSize": 14,
+                  "fontFamily": "PP Object Sans",
+                  "fontWeight": "Regular",
+                  "lineHeight": {
+                    "unit": "PERCENT",
+                    "value": 139.9999976158142
+                  },
+                  "lineHeightPx": 19.59999966621399,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "textDecoration": "NONE",
+                  "textCase": "ORIGINAL",
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "boundVariables": {}
+                    }
+                  ]
+                }
+              ],
+              "style": {
+                "fontFamily": "PP Object Sans",
+                "fontSize": 14,
+                "lineHeight": {
+                  "unit": "PERCENT",
+                  "value": 139.9999976158142
+                },
+                "textAlign": "LEFT",
+                "textAlignVertical": "TOP",
+                "paragraphSpacing": 0,
+                "paragraphIndent": 0,
+                "opacity": 1
+              }
+            },
+            {
+              "id": "3292:1271",
+              "name": "→ CSS, Javascript, PHP → CMS, ProcessWire development → Interaction & animations → Custom code development",
+              "type": "TEXT",
+              "absoluteBoundingBox": {
+                "x": 879.4424095153809,
+                "y": 883.6875,
+                "width": 360.966796875,
+                "height": 80
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "layoutGrids": [],
+              "children": [],
+              "characters": "→ CSS, Javascript, PHP → CMS, ProcessWire development → Interaction & animations → Custom code development",
+              "textSegments": [
+                {
+                  "characters": "→ CSS, Javascript, PHP → CMS, ProcessWire development → Interaction & animations → Custom code development",
+                  "fontSize": 14,
+                  "fontFamily": "PP Object Sans",
+                  "fontWeight": "Regular",
+                  "lineHeight": {
+                    "unit": "PERCENT",
+                    "value": 139.9999976158142
+                  },
+                  "lineHeightPx": 19.59999966621399,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "textDecoration": "NONE",
+                  "textCase": "ORIGINAL",
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "boundVariables": {}
+                    }
+                  ]
+                }
+              ],
+              "style": {
+                "fontFamily": "PP Object Sans",
+                "fontSize": 14,
+                "lineHeight": {
+                  "unit": "PERCENT",
+                  "value": 139.9999976158142
+                },
+                "textAlign": "LEFT",
+                "textAlignVertical": "TOP",
+                "paragraphSpacing": 0,
+                "paragraphIndent": 0,
+                "opacity": 1
+              }
+            },
+            {
+              "id": "3077:747",
+              "name": "Line 3",
+              "type": "LINE",
+              "absoluteBoundingBox": {
+                "x": 860.0000258005257,
+                "y": 467.44140625,
+                "width": 590.24609375,
+                "height": 0
+              },
+              "fills": [],
+              "layoutGrids": [],
+              "children": [],
+              "rotation": -90.00000250448296,
+              "strokes": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 0.30000001192092896,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "CENTER",
+              "mcp_svg_url": "assets/line_3_3077-747.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3084:819",
+      "name": "Wir schaffen Beziehungen zwischen Unter-nehmen und ihren Kund:innen, die Resonanz finden. Für eine Markenidentität, die emotional verbindet und nachhaltig wirkt.",
+      "type": "TEXT",
+      "absoluteBoundingBox": {
+        "x": 17.060546875,
+        "y": 45.1328125,
+        "width": 1189.09765625,
+        "height": 216
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "layoutGrids": [],
+      "children": [],
+      "characters": "Wir schaffen Beziehungen zwischen Unter-nehmen und ihren Kund:innen, die Resonanz finden. Für eine Markenidentität, die emotional verbindet und nachhaltig wirkt.",
+      "textSegments": [
+        {
+          "characters": "Wir schaffen Beziehungen zwischen Unter-nehmen und ihren Kund:innen, die Resonanz finden. Für eine Markenidentität, die emotional verbindet und nachhaltig wirkt.",
+          "fontSize": 49,
+          "fontFamily": "PP Object Sans",
+          "fontWeight": "Heavy",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 110.00000238418579
+          },
+          "lineHeightPx": 53.90000116825104,
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -1
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ],
+      "style": {
+        "fontFamily": "PP Object Sans",
+        "fontSize": 49,
+        "lineHeight": {
+          "unit": "PERCENT",
+          "value": 110.00000238418579
+        },
+        "textAlign": "LEFT",
+        "textAlignVertical": "TOP",
+        "paragraphSpacing": 0,
+        "paragraphIndent": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "id": "5018:68",
+      "name": "Group 229",
+      "type": "GROUP",
+      "absoluteBoundingBox": {
+        "x": 19.7578125,
+        "y": 3115,
+        "width": 1242.0908203125,
+        "height": 60
+      },
+      "fills": [],
+      "layoutGrids": [],
+      "children": [
+        {
+          "id": "4316:938",
+          "name": "KONKAT STUDIO GbR © 2026",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 19.7578125,
+            "y": 3115,
+            "width": 151,
+            "height": 40
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "KONKAT STUDIO GbR\n© 2026",
+          "textSegments": [
+            {
+              "characters": "KONKAT STUDIO GbR\n© 2026",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 139.9999976158142
+              },
+              "lineHeightPx": 19.59999966621399,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 139.9999976158142
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "4316:939",
+          "name": "c/o Cobblestone Neuer Pferdemarkt 1 20359 Hamburg",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 226.01953125,
+            "y": 3115,
+            "width": 141,
+            "height": 60
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "c/o Cobblestone\nNeuer Pferdemarkt 1\n20359 Hamburg",
+          "textSegments": [
+            {
+              "characters": "c/o Cobblestone\nNeuer Pferdemarkt 1\n20359 Hamburg",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 139.9999976158142
+              },
+              "lineHeightPx": 19.59999966621399,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 139.9999976158142
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "4316:940",
+          "name": "+49 152 5870 4586 info@konkat.studio  ",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 437.9267578125,
+            "y": 3115,
+            "width": 135,
+            "height": 60
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "+49 152 5870 4586 \ninfo@konkat.studio  ",
+          "textSegments": [
+            {
+              "characters": "+49 152 5870 4586 \ninfo@konkat.studio  ",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 139.9999976158142
+              },
+              "lineHeightPx": 19.59999966621399,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 139.9999976158142
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "4316:941",
+          "name": "Projekte Services Studio",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 649.0205078125,
+            "y": 3115,
+            "width": 61,
+            "height": 60
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "Projekte\nServices\nStudio",
+          "textSegments": [
+            {
+              "characters": "Projekte\nServices\nStudio",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 139.9999976158142
+              },
+              "lineHeightPx": 19.59999966621399,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "UNDERLINE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 139.9999976158142
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "4316:942",
+          "name": "Kontakt Impressum Datenschutz",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 859.4833984375,
+            "y": 3115,
+            "width": 88,
+            "height": 60
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "Kontakt\nImpressum \nDatenschutz",
+          "textSegments": [
+            {
+              "characters": "Kontakt\nImpressum \nDatenschutz",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 139.9999976158142
+              },
+              "lineHeightPx": 19.59999966621399,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "UNDERLINE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 139.9999976158142
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "4316:943",
+          "name": "Instagram LinkedIn Github",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 1028.8251953125,
+            "y": 3115,
+            "width": 69,
+            "height": 60
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "Instagram\nLinkedIn\nGithub",
+          "textSegments": [
+            {
+              "characters": "Instagram\nLinkedIn\nGithub",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 139.9999976158142
+              },
+              "lineHeightPx": 19.59999966621399,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "UNDERLINE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 139.9999976158142
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "4316:945",
+          "name": "DE",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 1183.265625,
+            "y": 3136.5625,
+            "width": 20,
+            "height": 20
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "DE",
+          "textSegments": [
+            {
+              "characters": "DE",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 139.9999976158142
+              },
+              "lineHeightPx": 19.59999966621399,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 139.9999976158142
+            },
+            "textAlign": "CENTER",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "4316:946",
+          "name": "EN",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 1226.091796875,
+            "y": 3136.5625,
+            "width": 20,
+            "height": 20
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "EN",
+          "textSegments": [
+            {
+              "characters": "EN",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 139.9999976158142
+              },
+              "lineHeightPx": 19.59999966621399,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 139.9999976158142
+            },
+            "textAlign": "CENTER",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "4316:947",
+          "name": "Rectangle 225",
+          "type": "RECTANGLE",
+          "absoluteBoundingBox": {
+            "x": 1172.166015625,
+            "y": 3123.8984375,
+            "width": 42.20000076293945,
+            "height": 42.203125
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "cornerRadius": 100,
+          "cornerRadii": {
+            "topLeft": 100,
+            "topRight": 100,
+            "bottomLeft": 100,
+            "bottomRight": 100
+          }
+        },
+        {
+          "id": "4316:948",
+          "name": "Rectangle 226",
+          "type": "RECTANGLE",
+          "absoluteBoundingBox": {
+            "x": 1172.166015625,
+            "y": 3123.8984375,
+            "width": 89.6826171875,
+            "height": 42.203125
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "cornerRadius": 100,
+          "cornerRadii": {
+            "topLeft": 100,
+            "topRight": 100,
+            "bottomLeft": 100,
+            "bottomRight": 100
+          }
+        }
+      ]
+    },
+    {
+      "id": "5018:65",
+      "name": "Group 226",
+      "type": "GROUP",
+      "absoluteBoundingBox": {
+        "x": 20,
+        "y": 1389.4765625,
+        "width": 1432.6591796875,
+        "height": 723.34765625
+      },
+      "fills": [],
+      "layoutGrids": [],
+      "children": [
+        {
+          "id": "3301:305",
+          "name": "[001]",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 20,
+            "y": 1768.73828125,
+            "width": 39,
+            "height": 20
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "[001]",
+          "textSegments": [
+            {
+              "characters": "[001]",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 139.9999976158142
+              },
+              "lineHeightPx": 19.59999966621399,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 139.9999976158142
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "3301:310",
+          "name": "[002]",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 20,
+            "y": 1864.62109375,
+            "width": 41,
+            "height": 20
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "[002]",
+          "textSegments": [
+            {
+              "characters": "[002]",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 139.9999976158142
+              },
+              "lineHeightPx": 19.59999966621399,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 139.9999976158142
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "3301:314",
+          "name": "[003]",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 20,
+            "y": 1960.50390625,
+            "width": 41,
+            "height": 20
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "[003]",
+          "textSegments": [
+            {
+              "characters": "[003]",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 139.9999976158142
+              },
+              "lineHeightPx": 19.59999966621399,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 139.9999976158142
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "3301:318",
+          "name": "[004]",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 20,
+            "y": 2056.38671875,
+            "width": 42,
+            "height": 20
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "[004]",
+          "textSegments": [
+            {
+              "characters": "[004]",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 139.9999976158142
+              },
+              "lineHeightPx": 19.59999966621399,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 139.9999976158142
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "3301:311",
+          "name": "Discover",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 229.3408203125,
+            "y": 1846.875,
+            "width": 1223.318359375,
+            "height": 54
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "Discover",
+          "textSegments": [
+            {
+              "characters": "Discover",
+              "fontSize": 49,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Heavy",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 110.00000238418579
+              },
+              "lineHeightPx": 53.90000116825104,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": -1
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 49,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 110.00000238418579
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "3301:303",
+          "name": "Define",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 229.3408203125,
+            "y": 1750.9921875,
+            "width": 1223.318359375,
+            "height": 54
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "Define",
+          "textSegments": [
+            {
+              "characters": "Define",
+              "fontSize": 49,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Heavy",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 110.00000238418579
+              },
+              "lineHeightPx": 53.90000116825104,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": -1
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 49,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 110.00000238418579
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "3301:304",
+          "name": "Line 5",
+          "type": "LINE",
+          "absoluteBoundingBox": {
+            "x": 20,
+            "y": 1825.17578125,
+            "width": 1240,
+            "height": 0
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.30000001192092896,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokeWeight": 1,
+          "strokeAlign": "CENTER",
+          "mcp_svg_url": "assets/line_5_3301-304.svg"
+        },
+        {
+          "id": "3301:315",
+          "name": "Design",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 229.3408203125,
+            "y": 1942.7578125,
+            "width": 1223.318359375,
+            "height": 54
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "Design",
+          "textSegments": [
+            {
+              "characters": "Design",
+              "fontSize": 49,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Heavy",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 110.00000238418579
+              },
+              "lineHeightPx": 53.90000116825104,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": -1
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 49,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 110.00000238418579
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "3301:312",
+          "name": "Line 6",
+          "type": "LINE",
+          "absoluteBoundingBox": {
+            "x": 20,
+            "y": 1921.05859375,
+            "width": 1240,
+            "height": 0
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.30000001192092896,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokeWeight": 1,
+          "strokeAlign": "CENTER",
+          "mcp_svg_url": "assets/line_6_3301-312.svg"
+        },
+        {
+          "id": "3301:317",
+          "name": "Line 8",
+          "type": "LINE",
+          "absoluteBoundingBox": {
+            "x": 20,
+            "y": 2016.94140625,
+            "width": 1240,
+            "height": 0
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.30000001192092896,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokeWeight": 1,
+          "strokeAlign": "CENTER",
+          "mcp_svg_url": "assets/line_8_3301-317.svg"
+        },
+        {
+          "id": "5018:63",
+          "name": "Group 224",
+          "type": "GROUP",
+          "absoluteBoundingBox": {
+            "x": 20,
+            "y": 1389.4765625,
+            "width": 1223.798828125,
+            "height": 247.94921875
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [
+            {
+              "id": "3301:301",
+              "name": "Unser process",
+              "type": "TEXT",
+              "absoluteBoundingBox": {
+                "x": 20,
+                "y": 1389.4765625,
+                "width": 375.115234375,
+                "height": 20
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "layoutGrids": [],
+              "children": [],
+              "characters": "Unser process",
+              "textSegments": [
+                {
+                  "characters": "Unser process",
+                  "fontSize": 14,
+                  "fontFamily": "PP Object Sans",
+                  "fontWeight": "Regular",
+                  "lineHeight": {
+                    "unit": "PERCENT",
+                    "value": 139.9999976158142
+                  },
+                  "lineHeightPx": 19.59999966621399,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "textDecoration": "NONE",
+                  "textCase": "ORIGINAL",
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "boundVariables": {}
+                    }
+                  ]
+                }
+              ],
+              "style": {
+                "fontFamily": "PP Object Sans",
+                "fontSize": 14,
+                "lineHeight": {
+                  "unit": "PERCENT",
+                  "value": 139.9999976158142
+                },
+                "textAlign": "LEFT",
+                "textAlignVertical": "TOP",
+                "paragraphSpacing": 0,
+                "paragraphIndent": 0,
+                "opacity": 1
+              }
+            },
+            {
+              "id": "3292:1228",
+              "name": "Unser Prozess ist darauf ausgerichtet, das Wesen einer Marke zu entdecken und es in eine mutige, differenzierende und zukunftsorientierte visuelle Identität zu verwandeln.",
+              "type": "TEXT",
+              "absoluteBoundingBox": {
+                "x": 20.48046875,
+                "y": 1421.42578125,
+                "width": 1223.318359375,
+                "height": 216
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "layoutGrids": [],
+              "children": [],
+              "characters": "Unser Prozess ist darauf ausgerichtet, das Wesen einer Marke zu entdecken und es in eine mutige, differenzierende und zukunftsorientierte visuelle Identität zu verwandeln.",
+              "textSegments": [
+                {
+                  "characters": "Unser Prozess ist darauf ausgerichtet, das Wesen einer Marke zu entdecken und es in eine mutige, differenzierende und zukunftsorientierte visuelle Identität zu verwandeln.",
+                  "fontSize": 49,
+                  "fontFamily": "PP Object Sans",
+                  "fontWeight": "Heavy",
+                  "lineHeight": {
+                    "unit": "PERCENT",
+                    "value": 110.00000238418579
+                  },
+                  "lineHeightPx": 53.90000116825104,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": -1
+                  },
+                  "textDecoration": "NONE",
+                  "textCase": "ORIGINAL",
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "boundVariables": {}
+                    }
+                  ]
+                }
+              ],
+              "style": {
+                "fontFamily": "PP Object Sans",
+                "fontSize": 49,
+                "lineHeight": {
+                  "unit": "PERCENT",
+                  "value": 110.00000238418579
+                },
+                "textAlign": "LEFT",
+                "textAlignVertical": "TOP",
+                "paragraphSpacing": 0,
+                "paragraphIndent": 0,
+                "opacity": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "3301:319",
+          "name": "Deliver",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 229.3408203125,
+            "y": 2038.640625,
+            "width": 1223.318359375,
+            "height": 54
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "Deliver",
+          "textSegments": [
+            {
+              "characters": "Deliver",
+              "fontSize": 49,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Heavy",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 110.00000238418579
+              },
+              "lineHeightPx": 53.90000116825104,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": -1
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 49,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 110.00000238418579
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "3301:321",
+          "name": "Line 10",
+          "type": "LINE",
+          "absoluteBoundingBox": {
+            "x": 20,
+            "y": 2112.82421875,
+            "width": 1240,
+            "height": 0
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.30000001192092896,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokeWeight": 1,
+          "strokeAlign": "CENTER",
+          "mcp_svg_url": "assets/line_10_3301-321.svg"
+        },
+        {
+          "id": "3301:302",
+          "name": "Line 4",
+          "type": "LINE",
+          "absoluteBoundingBox": {
+            "x": 20,
+            "y": 1729.29296875,
+            "width": 1240,
+            "height": 0
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.30000001192092896,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokeWeight": 1,
+          "strokeAlign": "CENTER",
+          "mcp_svg_url": "assets/line_4_3301-302.svg"
+        },
+        {
+          "id": "3301:353",
+          "name": "Group 152",
+          "type": "GROUP",
+          "absoluteBoundingBox": {
+            "x": 1194.248046875,
+            "y": 1758.74609375,
+            "width": 35.55216598510742,
+            "height": 35.20170593261719
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [
+            {
+              "id": "3301:354",
+              "name": "Rectangle 175",
+              "type": "RECTANGLE",
+              "absoluteBoundingBox": {
+                "x": 1217.8623046875,
+                "y": 1770.275390625,
+                "width": 11.937908172607422,
+                "height": 11.937908172607422
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "layoutGrids": [],
+              "children": []
+            },
+            {
+              "id": "3301:355",
+              "name": "Group 116",
+              "type": "GROUP",
+              "absoluteBoundingBox": {
+                "x": 1194.248046875,
+                "y": 1758.74609375,
+                "width": 35.20170593261719,
+                "height": 35.20170593261719
+              },
+              "fills": [],
+              "layoutGrids": [],
+              "children": [
+                {
+                  "id": "3301:356",
+                  "name": "Rectangle 147",
+                  "type": "RECTANGLE",
+                  "absoluteBoundingBox": {
+                    "x": 1218.3604793548584,
+                    "y": 1758.74609375,
+                    "width": 35.20170593261719,
+                    "height": 11.733904838562012
+                  },
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "boundVariables": {}
+                    }
+                  ],
+                  "layoutGrids": [],
+                  "children": [],
+                  "rotation": -90
+                },
+                {
+                  "id": "3301:357",
+                  "name": "Rectangle 137",
+                  "type": "RECTANGLE",
+                  "absoluteBoundingBox": {
+                    "x": 1194.2484049456834,
+                    "y": 1770.4807567596436,
+                    "width": 35.20170593261719,
+                    "height": 11.733904838562012
+                  },
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "boundVariables": {}
+                    }
+                  ],
+                  "layoutGrids": [],
+                  "children": [],
+                  "rotation": -9.213866198408551e-15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3301:359",
+          "name": "Group 153",
+          "type": "GROUP",
+          "absoluteBoundingBox": {
+            "x": 1194.248046875,
+            "y": 1856.2734375,
+            "width": 35.55216598510742,
+            "height": 35.20170593261719
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [
+            {
+              "id": "3301:360",
+              "name": "Rectangle 175",
+              "type": "RECTANGLE",
+              "absoluteBoundingBox": {
+                "x": 1217.8623046875,
+                "y": 1867.802734375,
+                "width": 11.937908172607422,
+                "height": 11.937908172607422
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "layoutGrids": [],
+              "children": []
+            },
+            {
+              "id": "3301:361",
+              "name": "Group 116",
+              "type": "GROUP",
+              "absoluteBoundingBox": {
+                "x": 1194.248046875,
+                "y": 1856.2734375,
+                "width": 35.20170593261719,
+                "height": 35.20170593261719
+              },
+              "fills": [],
+              "layoutGrids": [],
+              "children": [
+                {
+                  "id": "3301:362",
+                  "name": "Rectangle 147",
+                  "type": "RECTANGLE",
+                  "absoluteBoundingBox": {
+                    "x": 1218.3604793548584,
+                    "y": 1856.2734375,
+                    "width": 35.20170593261719,
+                    "height": 11.733904838562012
+                  },
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "boundVariables": {}
+                    }
+                  ],
+                  "layoutGrids": [],
+                  "children": [],
+                  "rotation": -90
+                },
+                {
+                  "id": "3301:363",
+                  "name": "Rectangle 137",
+                  "type": "RECTANGLE",
+                  "absoluteBoundingBox": {
+                    "x": 1194.2484049456834,
+                    "y": 1868.0081005096436,
+                    "width": 35.20170593261719,
+                    "height": 11.733904838562012
+                  },
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "boundVariables": {}
+                    }
+                  ],
+                  "layoutGrids": [],
+                  "children": [],
+                  "rotation": -9.213866198408551e-15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3301:364",
+          "name": "Group 154",
+          "type": "GROUP",
+          "absoluteBoundingBox": {
+            "x": 1194.248046875,
+            "y": 1952.15625,
+            "width": 35.55216598510742,
+            "height": 35.20170593261719
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [
+            {
+              "id": "3301:365",
+              "name": "Rectangle 175",
+              "type": "RECTANGLE",
+              "absoluteBoundingBox": {
+                "x": 1217.8623046875,
+                "y": 1963.685546875,
+                "width": 11.937908172607422,
+                "height": 11.937908172607422
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "layoutGrids": [],
+              "children": []
+            },
+            {
+              "id": "3301:366",
+              "name": "Group 116",
+              "type": "GROUP",
+              "absoluteBoundingBox": {
+                "x": 1194.248046875,
+                "y": 1952.15625,
+                "width": 35.20170593261719,
+                "height": 35.20170593261719
+              },
+              "fills": [],
+              "layoutGrids": [],
+              "children": [
+                {
+                  "id": "3301:367",
+                  "name": "Rectangle 147",
+                  "type": "RECTANGLE",
+                  "absoluteBoundingBox": {
+                    "x": 1218.3604793548584,
+                    "y": 1952.15625,
+                    "width": 35.20170593261719,
+                    "height": 11.733904838562012
+                  },
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "boundVariables": {}
+                    }
+                  ],
+                  "layoutGrids": [],
+                  "children": [],
+                  "rotation": -90
+                },
+                {
+                  "id": "3301:368",
+                  "name": "Rectangle 137",
+                  "type": "RECTANGLE",
+                  "absoluteBoundingBox": {
+                    "x": 1194.2484049456834,
+                    "y": 1963.8909130096436,
+                    "width": 35.20170593261719,
+                    "height": 11.733904838562012
+                  },
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "boundVariables": {}
+                    }
+                  ],
+                  "layoutGrids": [],
+                  "children": [],
+                  "rotation": -9.213866198408551e-15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3301:369",
+          "name": "Group 155",
+          "type": "GROUP",
+          "absoluteBoundingBox": {
+            "x": 1194.248046875,
+            "y": 2048.0390625,
+            "width": 35.55216598510742,
+            "height": 35.20170593261719
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [
+            {
+              "id": "3301:370",
+              "name": "Rectangle 175",
+              "type": "RECTANGLE",
+              "absoluteBoundingBox": {
+                "x": 1217.8623046875,
+                "y": 2059.568359375,
+                "width": 11.937908172607422,
+                "height": 11.937908172607422
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "layoutGrids": [],
+              "children": []
+            },
+            {
+              "id": "3301:371",
+              "name": "Group 116",
+              "type": "GROUP",
+              "absoluteBoundingBox": {
+                "x": 1194.248046875,
+                "y": 2048.0390625,
+                "width": 35.20170593261719,
+                "height": 35.20170593261719
+              },
+              "fills": [],
+              "layoutGrids": [],
+              "children": [
+                {
+                  "id": "3301:372",
+                  "name": "Rectangle 147",
+                  "type": "RECTANGLE",
+                  "absoluteBoundingBox": {
+                    "x": 1218.3604793548584,
+                    "y": 2048.0390625,
+                    "width": 35.20170593261719,
+                    "height": 11.733904838562012
+                  },
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "boundVariables": {}
+                    }
+                  ],
+                  "layoutGrids": [],
+                  "children": [],
+                  "rotation": -90
+                },
+                {
+                  "id": "3301:373",
+                  "name": "Rectangle 137",
+                  "type": "RECTANGLE",
+                  "absoluteBoundingBox": {
+                    "x": 1194.2484049456834,
+                    "y": 2059.7737255096436,
+                    "width": 35.20170593261719,
+                    "height": 11.733904838562012
+                  },
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1
+                      },
+                      "boundVariables": {}
+                    }
+                  ],
+                  "layoutGrids": [],
+                  "children": [],
+                  "rotation": -9.213866198408551e-15
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5018:66",
+      "name": "Group 227",
+      "type": "GROUP",
+      "absoluteBoundingBox": {
+        "x": 19.6005859375,
+        "y": 2346.47265625,
+        "width": 1030.3994140625,
+        "height": 232.796875
+      },
+      "fills": [],
+      "layoutGrids": [],
+      "children": [
+        {
+          "id": "3301:378",
+          "name": "Kontakt",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 19.6005859375,
+            "y": 2352.33984375,
+            "width": 375.115234375,
+            "height": 20
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "Kontakt",
+          "textSegments": [
+            {
+              "characters": "Kontakt",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 139.9999976158142
+              },
+              "lineHeightPx": 19.59999966621399,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 139.9999976158142
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "3301:376",
+          "name": "Jedes Projekt beginnt mit einem Gespräch.  Erzähl uns von deinen",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 230,
+            "y": 2346.47265625,
+            "width": 820,
+            "height": 162
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "Jedes Projekt beginnt mit einem Gespräch.  Erzähl uns von deinen",
+          "textSegments": [
+            {
+              "characters": "Jedes Projekt beginnt mit einem Gespräch.  ",
+              "fontSize": 49,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Heavy",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 110.00000238418579
+              },
+              "lineHeightPx": 53.90000116825104,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": -1
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            },
+            {
+              "characters": "Erzähl uns von deinen",
+              "fontSize": 49,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Heavy",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 110.00000238418579
+              },
+              "lineHeightPx": 53.90000116825104,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": -1
+              },
+              "textDecoration": "UNDERLINE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 49,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 110.00000238418579
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "3589:1991",
+          "name": "info@konkat.studio",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 230,
+            "y": 2559.26953125,
+            "width": 135,
+            "height": 20
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": " info@konkat.studio",
+          "textSegments": [
+            {
+              "characters": " info@konkat.studio",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 139.9999976158142
+              },
+              "lineHeightPx": 19.59999966621399,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 139.9999976158142
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "3589:1992",
+          "name": "+49 152 5870 4586",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 437.1689453125,
+            "y": 2559.26953125,
+            "width": 130,
+            "height": 20
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "+49 152 5870 4586",
+          "textSegments": [
+            {
+              "characters": "+49 152 5870 4586",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 139.9999976158142
+              },
+              "lineHeightPx": 19.59999966621399,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 139.9999976158142
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "5018:67",
+      "name": "Group 228",
+      "type": "GROUP",
+      "absoluteBoundingBox": {
+        "x": 228.2099609375,
+        "y": 2740.83984375,
+        "width": 823.5810546875,
+        "height": 202.19140625
+      },
+      "fills": [],
+      "layoutGrids": [],
+      "children": [
+        {
+          "id": "4717:59",
+          "name": "Rectangle 295",
+          "type": "RECTANGLE",
+          "absoluteBoundingBox": {
+            "x": 228.2099609375,
+            "y": 2751.234375,
+            "width": 823.5810546875,
+            "height": 191.796875
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.6000000238418579,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.4364107549190521,
+                "g": 0.4364107549190521,
+                "b": 0.4364107549190521
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "cornerRadius": 106.1328125,
+          "cornerRadii": {
+            "topLeft": 106.1328125,
+            "topRight": 106.1328125,
+            "bottomLeft": 106.1328125,
+            "bottomRight": 106.1328125
+          }
+        },
+        {
+          "id": "4717:67",
+          "name": "Rectangle 296",
+          "type": "RECTANGLE",
+          "absoluteBoundingBox": {
+            "x": 577.0224609375,
+            "y": 2740.83984375,
+            "width": 125.95590209960938,
+            "height": 20.39453125
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": []
+        },
+        {
+          "id": "4717:58",
+          "name": "We view AI as a powerful addition to our creative toolkit—not a replacement for it. By integrating it into our technical workflows, such as coding and image editing, we’re able to streamline the production process. This allows us to dedicate more of our energy to what truly matters: the core concept, the meticulous craft, and the human intuition behind every design.",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 291.326171875,
+            "y": 2805.1328125,
+            "width": 697.3468017578125,
+            "height": 84
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.6000000238418579,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "We view AI as a powerful addition to our creative toolkit—not a replacement for it. By integrating it into our technical workflows, such as coding and image editing, we’re able to streamline the production process. This allows us to dedicate more of our energy to what truly matters: the core concept, the meticulous craft, and the human intuition behind every design.",
+          "textSegments": [
+            {
+              "characters": "We view AI as a powerful addition to our creative toolkit—not a replacement for it. By integrating it into our technical workflows, such as coding and image editing, we’re able to streamline the production process. This allows us to dedicate more of our energy to what truly matters: the core concept, the meticulous craft, and the human intuition behind every design.",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 150
+              },
+              "lineHeightPx": 21,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 0.6000000238418579,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 150
+            },
+            "textAlign": "CENTER",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "4717:65",
+          "name": "What about AI?",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 566.0009765625,
+            "y": 2741.234375,
+            "width": 147.9970703125,
+            "height": 21
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.6000000238418579,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "What about AI? ",
+          "textSegments": [
+            {
+              "characters": "What about AI? ",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 150
+              },
+              "lineHeightPx": 21,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 0.6000000238418579,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 150
+            },
+            "textAlign": "CENTER",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "5018:69",
+      "name": "Group 230",
+      "type": "GROUP",
+      "absoluteBoundingBox": {
+        "x": 20.99609375,
+        "y": 14.4140625,
+        "width": 1238.60498046875,
+        "height": 36.45265579223633
+      },
+      "fills": [],
+      "layoutGrids": [],
+      "children": [
+        {
+          "id": "4293:597",
+          "name": "KONKAT",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 20.99609375,
+            "y": 15.3203125,
+            "width": 57,
+            "height": 20
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "KONKAT",
+          "textSegments": [
+            {
+              "characters": "KONKAT",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 139.9999976158142
+              },
+              "lineHeightPx": 19.59999966621399,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 139.9999976158142
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "4293:598",
+          "name": "Services",
+          "type": "TEXT",
+          "absoluteBoundingBox": {
+            "x": 220.6005859375,
+            "y": 14.4140625,
+            "width": 61,
+            "height": 20
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "layoutGrids": [],
+          "children": [],
+          "characters": "Services",
+          "textSegments": [
+            {
+              "characters": "Services",
+              "fontSize": 14,
+              "fontFamily": "PP Object Sans",
+              "fontWeight": "Regular",
+              "lineHeight": {
+                "unit": "PERCENT",
+                "value": 139.9999976158142
+              },
+              "lineHeightPx": 19.59999966621399,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ],
+          "style": {
+            "fontFamily": "PP Object Sans",
+            "fontSize": 14,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 139.9999976158142
+            },
+            "textAlign": "LEFT",
+            "textAlignVertical": "TOP",
+            "paragraphSpacing": 0,
+            "paragraphIndent": 0,
+            "opacity": 1
+          }
+        },
+        {
+          "id": "5018:64",
+          "name": "Group 225",
+          "type": "GROUP",
+          "absoluteBoundingBox": {
+            "x": 1189.1982421875,
+            "y": 15.66015625,
+            "width": 70.40287780761719,
+            "height": 35.20656204223633
+          },
+          "fills": [],
+          "layoutGrids": [],
+          "children": [
+            {
+              "id": "3718:4086",
+              "name": "Rectangle 145",
+              "type": "RECTANGLE",
+              "absoluteBoundingBox": {
+                "x": 1224.3994140625,
+                "y": 15.6796875,
+                "width": 35.20170593261719,
+                "height": 11.733904838562012
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "layoutGrids": [],
+              "children": [],
+              "rotation": -9.213866198408551e-15
+            },
+            {
+              "id": "3718:4087",
+              "name": "Rectangle 146",
+              "type": "RECTANGLE",
+              "absoluteBoundingBox": {
+                "x": 1224.3994140625,
+                "y": 39.1328125,
+                "width": 35.20170593261719,
+                "height": 11.733904838562012
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "layoutGrids": [],
+              "children": [],
+              "rotation": -9.213866198408551e-15
+            },
+            {
+              "id": "3718:4088",
+              "name": "Rectangle 147",
+              "type": "RECTANGLE",
+              "absoluteBoundingBox": {
+                "x": 1212.6669921875,
+                "y": 15.66015625,
+                "width": 35.20170593261719,
+                "height": 11.733904838562012
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "layoutGrids": [],
+              "children": [],
+              "rotation": -90
+            },
+            {
+              "id": "3718:4089",
+              "name": "Rectangle 137",
+              "type": "RECTANGLE",
+              "absoluteBoundingBox": {
+                "x": 1189.1982421875,
+                "y": 27.39453125,
+                "width": 35.20170593261719,
+                "height": 11.733904838562012
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "layoutGrids": [],
+              "children": [],
+              "rotation": -9.213866198408551e-15
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

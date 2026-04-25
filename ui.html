@@ -1,0 +1,127 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+<style>
+  :root {
+    --success: #1BC47D;
+    --bg: #ffffff;
+    --text: #333333;
+  }
+  body { 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+    padding: 20px; 
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    color: var(--text);
+  }
+  .container {
+    background: var(--bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  h3 { margin-top: 0; font-size: 16px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+  
+  .section { margin-bottom: 0; }
+  .label { font-size: 12px; font-weight: bold; color: #888; margin-bottom: 8px; display: block; }
+  
+  button { 
+    width: 100%; 
+    padding: 12px; 
+    border: none; 
+    border-radius: 6px; 
+    font-weight: 600; 
+    cursor: pointer; 
+    transition: opacity 0.2s, transform 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  button:active { transform: scale(0.98); }
+  button:disabled { background: #ccc; cursor: not-allowed; opacity: 0.6; }
+  
+  #zipBtn { background: var(--success); color: white; }
+  
+  .status {
+    font-size: 11px;
+    margin-top: 8px;
+    padding: 8px;
+    color: #555;
+    text-align: center;
+  }
+  .icon { font-size: 16px; }
+</style>
+
+<div class="container">
+  <h3>Export to PageGrid</h3>
+  
+  <div class="section">
+    <span class="label">Download JSON + Images as ZIP</span>
+    <button id="zipBtn" disabled>
+      <span class="icon">📦</span> Download .ZIP
+    </button>
+    <div class="status" id="zipStatus">Processing images...</div>
+  </div>
+</div>
+
+<script>
+  let cleanJson = null;
+  let imageAssets = [];
+  let suggestedFileName = "pagegrid_export";
+
+  // Kommunikation von code.js empfangen
+  window.onmessage = async (event) => {
+    const msg = event.data.pluginMessage;
+    
+    if (msg.type === 'waiting') {
+      cleanJson = null;
+      imageAssets = [];
+      document.getElementById('zipStatus').innerText = "Select a frame in Figma to get started";
+      document.getElementById('zipBtn').disabled = true;
+    }
+
+    if (msg.type === 'data-ready') {
+      cleanJson = msg.payload;
+      imageAssets = msg.images;
+      suggestedFileName = msg.fileName || "export";
+
+      document.getElementById('zipStatus').innerText = imageAssets.length + " image(s) detected.";
+      document.getElementById('zipBtn').disabled = false;
+    }
+  };
+
+  // ZIP Generierung Funktion
+  document.getElementById('zipBtn').onclick = async () => {
+    if (!imageAssets.length && !cleanJson) return;
+    
+    document.getElementById('zipStatus').innerText = "⚡ Generating ZIP...";
+    const zip = new JSZip();
+
+    // Bilder in den Assets-Ordner packen
+    imageAssets.forEach(img => {
+      if (img.format === 'svg') {
+        zip.file(`assets/${img.name}.svg`, img.svgString);
+      } else {
+        zip.file(`assets/${img.name}.${img.format}`, img.bytes);
+      }
+    });
+
+    // Das saubere JSON ebenfalls ins ZIP legen (als Backup)
+    zip.file("data.json", JSON.stringify(cleanJson, null, 2));
+
+    try {
+      const content = await zip.generateAsync({ type: "blob" });
+      const url = URL.createObjectURL(content);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `${suggestedFileName}.zip`;
+      link.click();
+      
+      document.getElementById('zipStatus').innerText = "✅ ZIP downloaded!";
+    } catch (err) {
+      document.getElementById('zipStatus').innerText = "❌ Error creating ZIP";
+      console.error(err);
+    }
+  };
+</script>
