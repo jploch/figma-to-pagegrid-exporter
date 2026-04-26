@@ -59,12 +59,21 @@ function countRectanglesInSubtree(node) {
   return 0;
 }
 
+// Returns true if any node in the subtree is named "pg_image" or starts with "pg_image".
+// Used to exclude groups that act as image placeholders from SVG composite detection.
+function hasPgImageInSubtree(node) {
+  if (node.name && node.name.startsWith("pg_image")) return true;
+  if (node.children) return node.children.some(c => hasPgImageInSubtree(c));
+  return false;
+}
+
 // Returns true for GROUP nodes whose entire subtree contains only shapes
 // and has at least 2 RECTANGLEs anywhere within it.
 // These represent composite shapes that should be captured as a single SVG.
 function isCompositeShapeGroup(node) {
   if (node.type !== "GROUP") return false;
   if (!node.children || node.children.length === 0) return false;
+  if (node.children.some(c => hasPgImageInSubtree(c))) return false;
   if (!node.children.every(c => isShapeSubtree(c))) return false;
   return countRectanglesInSubtree(node) >= 2;
 }
