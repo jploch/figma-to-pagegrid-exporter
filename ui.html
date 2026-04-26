@@ -76,6 +76,25 @@
   let imageAssets = [];
   let suggestedFileName = "pagegrid_export";
 
+  async function compressJpeg(bytes, quality = 0.82) {
+    return new Promise(resolve => {
+      const blob = new Blob([bytes], { type: 'image/jpeg' });
+      const url = URL.createObjectURL(blob);
+      const img = new Image();
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        canvas.getContext('2d').drawImage(img, 0, 0);
+        canvas.toBlob(b => {
+          URL.revokeObjectURL(url);
+          b.arrayBuffer().then(ab => resolve(new Uint8Array(ab)));
+        }, 'image/jpeg', quality);
+      };
+      img.src = url;
+    });
+  }
+
   // Kommunikation von code.js empfangen
   window.onmessage = async (event) => {
     const msg = event.data.pluginMessage;
@@ -105,13 +124,17 @@
     const zip = new JSZip();
 
     // Bilder in den Assets-Ordner packen
-    imageAssets.forEach(img => {
+    for (const img of imageAssets) {
       if (img.format === 'svg') {
         zip.file(`assets/${img.name}.svg`, img.svgString);
       } else {
-        zip.file(`assets/${img.name}.${img.format}`, img.bytes);
+        let fileBytes = img.bytes;
+        if (img.format === 'jpg' && fileBytes.length > 1048576) {
+          fileBytes = await compressJpeg(fileBytes);
+        }
+        zip.file(`assets/${img.name}.${img.format}`, fileBytes);
       }
-    });
+    }
 
     // Das saubere JSON ebenfalls ins ZIP legen (als Backup)
     zip.file("data.json", JSON.stringify(cleanJson, null, 2));

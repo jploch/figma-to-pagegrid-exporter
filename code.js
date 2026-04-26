@@ -230,7 +230,10 @@ async function serializeToMCP(node) {
         // PNG magic: 0x89 0x50 — already the default
       }
 
-      const bytes = await node.exportAsync({ format: exportFormat, constraint: { type: 'SCALE', value: 2.5 } });
+      const exportConstraint = node.width > 1200
+        ? { type: 'WIDTH', value: 3000 }
+        : { type: 'SCALE', value: 2.5 };
+      const bytes = await node.exportAsync({ format: exportFormat, constraint: exportConstraint });
       
       // Dateiname generieren: kleingeschrieben, ohne Sonderzeichen + ID für Eindeutigkeit
       const safeName = node.name.replace(/[^a-z0-9]/gi, '_').toLowerCase() + "_" + node.id.replace(":", "-");
