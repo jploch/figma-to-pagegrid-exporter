@@ -1,10 +1,12 @@
 {
   "name": "Figma to PageGrid Exporter",
-  "id": "figma-to-pagegrid-exporter",
+  "id": "1630663953586135342",
   "api": "1.0.0",
   "ui": "ui.html",
   "main": "code.js",
   "capabilities": [],
   "enableProposedApi": false,
-  "editorType": ["figma"]
-}
+  "editorType": ["figma"],
+  "networkAccess": { "allowedDomains": ["none"] },
+  "documentAccess": "dynamic-page"
+} 
