@@ -42,23 +42,6 @@ function isVectorGroup(node) {
 // Extends VECTOR_TYPES to include RECTANGLE for composite shape detection.
 const ALL_SHAPE_TYPES = new Set([...VECTOR_TYPES, "RECTANGLE"]);
 
-// Returns true if a node and its entire subtree contain only shapes or
-// groups of shapes — no TEXT, FRAME, or other non-shape nodes.
-function isShapeSubtree(node) {
-  if (ALL_SHAPE_TYPES.has(node.type)) return true;
-  if (node.type === "GROUP" && node.children)
-    return node.children.every(child => isShapeSubtree(child));
-  return false;
-}
-
-// Counts RECTANGLE nodes anywhere in the subtree (recursively).
-function countRectanglesInSubtree(node) {
-  if (node.type === "RECTANGLE") return 1;
-  if (node.type === "GROUP" && node.children)
-    return node.children.reduce((sum, c) => sum + countRectanglesInSubtree(c), 0);
-  return 0;
-}
-
 // Returns true if any node in the subtree is named "pg_image" or starts with "pg_image".
 // Used to exclude groups that act as image placeholders from SVG composite detection.
 function hasPgImageInSubtree(node) {
@@ -67,20 +50,25 @@ function hasPgImageInSubtree(node) {
   return false;
 }
 
-// Returns true for GROUP nodes whose entire subtree contains only shapes
-// and has at least 2 RECTANGLEs anywhere within it.
-// These represent composite shapes that should be captured as a single SVG.
+// Returns true for GROUP nodes whose direct children are all shapes (or qualifying nested
+// shape groups) and that don't reduce to a single lone rectangle.
+// Any TEXT, FRAME, IMAGE, or other non-shape child makes this return false.
 function isCompositeShapeGroup(node) {
   if (node.type !== "GROUP") return false;
   if (!node.children || node.children.length === 0) return false;
   if (node.children.some(c => hasPgImageInSubtree(c))) return false;
-  if (!node.children.every(c => isShapeSubtree(c))) return false;
-  return countRectanglesInSubtree(node) >= 2;
+  if (!node.children.every(c => ALL_SHAPE_TYPES.has(c.type) || isCompositeShapeGroup(c))) return false;
+  // Must have at least one direct shape child — groups of groups should recurse, not collapse
+  if (!node.children.some(c => ALL_SHAPE_TYPES.has(c.type))) return false;
+  // A single lone rectangle doesn't need to be captured as an SVG
+  const rectangleCount = node.children.filter(c => c.type === "RECTANGLE").length;
+  if (rectangleCount === 1 && node.children.length === 1) return false;
+  return true;
 }
 
 // --- MAIN SERIALIZATION ---
 
-async function serializeToMCP(node) {
+async function serializeToMCP(node, forceSvg = false) {
   const obj = {
     id: node.id,
     name: node.name,
@@ -185,7 +173,9 @@ async function serializeToMCP(node) {
   }
 
   // 2. SVG EXPORT
-  const isSvgNode = isVectorType(node) || isVectorGroup(node) || node.name.toLowerCase().includes("(svg)");
+  const isSvgNode = isVectorType(node) || isVectorGroup(node)
+    || node.name.toLowerCase().includes("(svg)")
+    || (forceSvg && node.type === "RECTANGLE");
   if (isSvgNode) {
     try {
       const svgString = await node.exportAsync({ format: 'SVG_STRING' });
@@ -253,10 +243,53 @@ async function serializeToMCP(node) {
 
   // 4. REKURSION
   if ("children" in node) {
-    obj.children = await Promise.all(node.children.map(child => serializeToMCP(child)));
+    // Mixed group: 2+ direct RECTANGLEs alongside non-shape children (e.g. TEXT) →
+    // each RECTANGLE gets exported as its own SVG instead of as a layout node.
+    const directRects = node.children.filter(c => c.type === "RECTANGLE");
+    const hasNonShapes = node.children.some(c => !ALL_SHAPE_TYPES.has(c.type) && c.type !== "GROUP");
+    const forceSvgForRects = directRects.length >= 2 && hasNonShapes;
+
+    obj.children = await Promise.all(
+      node.children.map(child => {
+        const shouldForceSvg = forceSvgForRects
+          && child.type === "RECTANGLE"
+          && !coversParent(child, node);
+        return serializeToMCP(child, shouldForceSvg);
+      })
+    );
   }
   
   return obj;
+}
+
+// --- FULL-COVER DETECTION ---
+
+// Returns true if a child rectangle matches the width and height of its parent group,
+// indicating it's a background/styling element that should stay as a layout node.
+function coversParent(child, parent) {
+  return child.width === parent.width && child.height === parent.height;
+}
+
+// --- FLATTEN SINGLE-CHILD GROUP CHAINS ---
+
+// Collapses GROUP > GROUP > ... > content chains where each intermediate
+// GROUP has exactly one child (also a GROUP). The innermost GROUP with
+// real content is kept; wrapper groups are discarded.
+function flattenSingleChildGroups(node) {
+  // Bottom-up: process children first so nested chains fully resolve
+  if (Array.isArray(node.children) && node.children.length > 0)
+    node.children = node.children.map(flattenSingleChildGroups);
+
+  // Collapse: while this GROUP's only child is also a GROUP, skip the wrapper
+  while (
+    node.type === "GROUP" &&
+    Array.isArray(node.children) &&
+    node.children.length === 1 &&
+    node.children[0].type === "GROUP"
+  ) {
+    node.children = node.children[0].children;
+  }
+  return node;
 }
 
 // --- PLUGIN RUNNER ---
@@ -272,7 +305,7 @@ async function doExport() {
   imageCollector = []; // Reset für neuen Durchlauf
 
   try {
-    const documentData = await serializeToMCP(selection[0]);
+    const documentData = flattenSingleChildGroups(await serializeToMCP(selection[0]));
 
     documentData.textStyles = figma.getLocalTextStyles().map(style => ({
       id: style.id,
