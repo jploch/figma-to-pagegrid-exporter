@@ -307,7 +307,7 @@ async function doExport() {
   try {
     const documentData = flattenSingleChildGroups(await serializeToMCP(selection[0]));
 
-    documentData.textStyles = figma.getLocalTextStyles().map(style => ({
+    documentData.textStyles = (await figma.getLocalTextStylesAsync()).map(style => ({
       id: style.id,
       name: style.name,
       fontSize: style.fontSize,
