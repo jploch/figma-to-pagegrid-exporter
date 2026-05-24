@@ -36,6 +36,7 @@ function isVectorType(node) {
 function isVectorGroup(node) {
   if (node.type !== "GROUP" && node.type !== "FRAME") return false;
   if (!node.children || node.children.length === 0) return false;
+  if (node.children.some(c => hasPgImageInSubtree(c))) return false;
   return node.children.every(child => isVectorType(child) || isVectorGroup(child));
 }
 
@@ -69,6 +70,8 @@ function isCompositeShapeGroup(node) {
 // --- MAIN SERIALIZATION ---
 
 async function serializeToMCP(node, forceSvg = false) {
+  if (node.visible === false) return null;
+
   const obj = {
     id: node.id,
     name: node.name,
@@ -124,7 +127,14 @@ async function serializeToMCP(node, forceSvg = false) {
     if (node.layoutWrap && node.layoutWrap !== 'NO_WRAP') obj.layoutWrap = node.layoutWrap;
     if (node.primaryAxisAlignItems) obj.primaryAxisAlignItems = node.primaryAxisAlignItems;
     if (node.counterAxisAlignItems) obj.counterAxisAlignItems = node.counterAxisAlignItems;
+    if (node.primaryAxisSizingMode) obj.primaryAxisSizingMode = node.primaryAxisSizingMode;
+    if (node.counterAxisSizingMode) obj.counterAxisSizingMode = node.counterAxisSizingMode;
+    if ('counterAxisSpacing' in node && node.counterAxisSpacing !== 0) obj.counterAxisSpacing = node.counterAxisSpacing;
   }
+
+  if ('layoutPositioning' in node && node.layoutPositioning !== 'AUTO') obj.layoutPositioning = node.layoutPositioning;
+  if ('layoutAlign' in node && node.layoutAlign !== 'INHERIT') obj.layoutAlign = node.layoutAlign;
+  if ('layoutGrow' in node && node.layoutGrow !== 0) obj.layoutGrow = node.layoutGrow;
 
   // 1. TEXT HANDLING (Rich-Text & LineHeight Fix)
   if (node.type === "TEXT") {
@@ -134,8 +144,10 @@ async function serializeToMCP(node, forceSvg = false) {
     if (typeof textStyleId === 'string') obj.textStyleId = textStyleId;
     
     const segments = node.getStyledTextSegments([
-      "fontSize", "fontName", "lineHeight", "fills",
-      "letterSpacing", "textDecoration", "textCase"
+      "fontSize", "fontName", "fontWeight", "fontStyle", "lineHeight", "fills",
+      "letterSpacing", "textDecoration", "textDecorationStyle", "textCase",
+      "listOptions", "indentation", "paragraphSpacing", "paragraphIndent",
+      "listSpacing", "hyperlink"
     ]);
 
     const firstSeg = segments.length > 0 ? segments[0] : null;
@@ -145,7 +157,7 @@ async function serializeToMCP(node, forceSvg = false) {
       if (s.lineHeight && s.lineHeight.unit !== 'AUTO') {
         lh = { unit: s.lineHeight.unit, value: s.lineHeight.value };
       }
-      return {
+      const segObj = {
         characters: s.characters,
         fontSize: s.fontSize,
         fontFamily: s.fontName ? s.fontName.family : (firstSeg ? firstSeg.fontName.family : "sans-serif"),
@@ -153,10 +165,19 @@ async function serializeToMCP(node, forceSvg = false) {
         lineHeight: lh,
         lineHeightPx: lh.unit === "PERCENT" ? (s.fontSize * lh.value / 100) : lh.value,
         letterSpacing: s.letterSpacing,
-        textDecoration: s.textDecoration,
-        textCase: s.textCase,
         fills: s.fills
       };
+      if (s.textDecoration && s.textDecoration !== 'NONE') segObj.textDecoration = s.textDecoration;
+      if (s.textCase && s.textCase !== 'ORIGINAL') segObj.textCase = s.textCase;
+      if (s.fontStyle && s.fontStyle !== 'REGULAR') segObj.fontStyle = s.fontStyle;
+      if (s.textDecorationStyle != null) segObj.textDecorationStyle = s.textDecorationStyle;
+      if (s.listOptions && s.listOptions.type !== 'NONE') segObj.listOptions = s.listOptions;
+      if (s.indentation > 0) segObj.indentation = s.indentation;
+      if (s.paragraphSpacing > 0) segObj.paragraphSpacing = s.paragraphSpacing;
+      if (s.paragraphIndent > 0) segObj.paragraphIndent = s.paragraphIndent;
+      if (s.listSpacing > 0) segObj.listSpacing = s.listSpacing;
+      if (s.hyperlink && s.hyperlink !== figma.mixed) segObj.hyperlink = s.hyperlink;
+      return segObj;
     });
 
     const fName = safeVal(node.fontName, firstSeg ? firstSeg.fontName : { family: "sans-serif", style: "Regular" });
@@ -166,10 +187,22 @@ async function serializeToMCP(node, forceSvg = false) {
       lineHeight: node.lineHeight !== figma.mixed ? node.lineHeight : { unit: "AUTO" },
       textAlign: safeVal(node.textAlignHorizontal, "LEFT"),
       textAlignVertical: safeVal(node.textAlignVertical, "TOP"),
-      paragraphSpacing: safeVal(node.paragraphSpacing, 0),
-      paragraphIndent: safeVal(node.paragraphIndent, 0),
       opacity: safeVal(node.opacity, 1)
     };
+    if (node.paragraphSpacing !== figma.mixed && node.paragraphSpacing > 0)
+      obj.style.paragraphSpacing = node.paragraphSpacing;
+    if (node.paragraphIndent !== figma.mixed && node.paragraphIndent > 0)
+      obj.style.paragraphIndent = node.paragraphIndent;
+    if (node.listSpacing !== figma.mixed && node.listSpacing > 0)
+      obj.style.listSpacing = node.listSpacing;
+    if (safeVal(node.hangingPunctuation, false) === true)
+      obj.style.hangingPunctuation = true;
+    if (safeVal(node.hangingList, false) === true)
+      obj.style.hangingList = true;
+    const lt = node.leadingTrim !== figma.mixed ? node.leadingTrim : null;
+    if (lt && (typeof lt === 'string' ? lt !== 'NONE' : lt.type !== 'NONE'))
+      obj.style.leadingTrim = lt;
+    if (node.hyperlink && node.hyperlink !== figma.mixed) obj.style.hyperlink = node.hyperlink;
   }
 
   // 2. SVG EXPORT
@@ -243,14 +276,17 @@ async function serializeToMCP(node, forceSvg = false) {
 
   // 4. REKURSION
   if ("children" in node) {
+    // Filter out hidden children
+    const visibleChildren = node.children.filter(c => c.visible !== false);
+
     // Mixed group: 2+ direct RECTANGLEs alongside non-shape children (e.g. TEXT) →
     // each RECTANGLE gets exported as its own SVG instead of as a layout node.
-    const directRects = node.children.filter(c => c.type === "RECTANGLE");
-    const hasNonShapes = node.children.some(c => !ALL_SHAPE_TYPES.has(c.type) && c.type !== "GROUP");
+    const directRects = visibleChildren.filter(c => c.type === "RECTANGLE");
+    const hasNonShapes = visibleChildren.some(c => !ALL_SHAPE_TYPES.has(c.type) && c.type !== "GROUP");
     const forceSvgForRects = directRects.length >= 2 && hasNonShapes;
 
     obj.children = await Promise.all(
-      node.children.map(child => {
+      visibleChildren.map(child => {
         const shouldForceSvg = forceSvgForRects
           && child.type === "RECTANGLE"
           && !coversParent(child, node);
@@ -317,6 +353,10 @@ async function doExport() {
       letterSpacing: style.letterSpacing,
       paragraphSpacing: style.paragraphSpacing,
       paragraphIndent: style.paragraphIndent,
+      listSpacing: style.listSpacing,
+      hangingPunctuation: style.hangingPunctuation,
+      hangingList: style.hangingList,
+      leadingTrim: style.leadingTrim,
       textCase: style.textCase,
       textDecoration: style.textDecoration,
       fills: style.fills
