@@ -51,6 +51,12 @@ function hasPgImageInSubtree(node) {
   return false;
 }
 
+// Returns true if a node has an IMAGE fill — these are photographic/raster content,
+// not vector shapes, and should not participate in composite shape group detection.
+function hasImageFill(node) {
+  return node.fills !== figma.mixed && Array.isArray(node.fills) && node.fills.some(f => f.type === "IMAGE");
+}
+
 // Returns true for GROUP nodes whose direct children are all shapes (or qualifying nested
 // shape groups) and that don't reduce to a single lone rectangle.
 // Any TEXT, FRAME, IMAGE, or other non-shape child makes this return false.
@@ -58,6 +64,9 @@ function isCompositeShapeGroup(node) {
   if (node.type !== "GROUP") return false;
   if (!node.children || node.children.length === 0) return false;
   if (node.children.some(c => hasPgImageInSubtree(c))) return false;
+  // RECTANGLEs with IMAGE fills (e.g. portrait photos) are not vector shapes —
+  // they need to export as independent PNG assets, not be merged into a group SVG.
+  if (node.children.some(c => c.type === "RECTANGLE" && hasImageFill(c))) return false;
   if (!node.children.every(c => ALL_SHAPE_TYPES.has(c.type) || isCompositeShapeGroup(c))) return false;
   // Must have at least one direct shape child — groups of groups should recurse, not collapse
   if (!node.children.some(c => ALL_SHAPE_TYPES.has(c.type))) return false;
@@ -236,9 +245,7 @@ async function serializeToMCP(node, forceSvg = false) {
   }
   
   // 3. IMAGE EXPORT (Sammler-Logik statt Base64)
-  const hasImageFill = node.fills !== figma.mixed && Array.isArray(node.fills) && node.fills.some(f => f.type === 'IMAGE');
-  
-  if (node.name.toLowerCase().includes("pg_image") || hasImageFill) {
+  if (node.name.toLowerCase().includes("pg_image") || hasImageFill(node)) {
     try {
       // Detect original image format via magic bytes
       let exportFormat = 'PNG';
