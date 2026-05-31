@@ -139,6 +139,10 @@ async function serializeToMCP(node, forceSvg = false) {
     if (node.primaryAxisSizingMode) obj.primaryAxisSizingMode = node.primaryAxisSizingMode;
     if (node.counterAxisSizingMode) obj.counterAxisSizingMode = node.counterAxisSizingMode;
     if ('counterAxisSpacing' in node && node.counterAxisSpacing !== 0) obj.counterAxisSpacing = node.counterAxisSpacing;
+    if ('minWidth' in node && node.minWidth !== 0)   obj.minWidth  = node.minWidth;
+    if ('maxWidth' in node && node.maxWidth !== 0)   obj.maxWidth  = node.maxWidth;
+    if ('minHeight' in node && node.minHeight !== 0) obj.minHeight = node.minHeight;
+    if ('maxHeight' in node && node.maxHeight !== 0) obj.maxHeight = node.maxHeight;
   }
 
   if ('layoutPositioning' in node && node.layoutPositioning !== 'AUTO') obj.layoutPositioning = node.layoutPositioning;
