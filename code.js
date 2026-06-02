@@ -1,5 +1,5 @@
 /**
- * PAGEGRID MCP-MASTER EXPORTER (v5.2 - Clean JSON Edition)
+ * PAGEGRID MCP-MASTER EXPORTER (v5.3 - Clean JSON Edition)
  * Trennt Struktur (JSON) von Binärdaten (Images) für LLM-Optimierung
  */
 
@@ -364,6 +364,8 @@ async function doExport() {
   }
 
   imageCollector = []; // Reset für neuen Durchlauf
+
+  figma.ui.postMessage({ type: 'loading' });
 
   try {
     const documentData = flattenSingleChildGroups(await serializeToMCP(selection[0]));
