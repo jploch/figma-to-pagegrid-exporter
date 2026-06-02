@@ -1,5 +1,5 @@
 /**
- * PAGEGRID MCP-MASTER EXPORTER (v5.0 - Clean JSON Edition)
+ * PAGEGRID MCP-MASTER EXPORTER (v5.2 - Clean JSON Edition)
  * Trennt Struktur (JSON) von Binärdaten (Images) für LLM-Optimierung
  */
 
@@ -267,7 +267,21 @@ async function serializeToMCP(node, forceSvg = false) {
       const exportConstraint = node.width > 1200
         ? { type: 'WIDTH', value: 3000 }
         : { type: 'SCALE', value: 2.5 };
+
+      // Strip cornerRadius before export so the image file is a clean rectangle.
+      // border-radius is applied via CSS on the frontend instead of being baked in.
+      const savedCornerRadius = 'cornerRadius' in node ? node.cornerRadius : undefined;
+      const savedRadii = {};
+      for (const key of ['topLeftRadius', 'topRightRadius', 'bottomLeftRadius', 'bottomRightRadius']) {
+        if (key in node) { savedRadii[key] = node[key]; node[key] = 0; }
+      }
+      if (savedCornerRadius !== undefined) node.cornerRadius = 0;
+
       const bytes = await node.exportAsync({ format: exportFormat, constraint: exportConstraint });
+
+      // Restore cornerRadius
+      if (savedCornerRadius !== undefined) node.cornerRadius = savedCornerRadius;
+      for (const key of Object.keys(savedRadii)) { node[key] = savedRadii[key]; }
       
       // Dateiname generieren: kleingeschrieben, ohne Sonderzeichen + ID für Eindeutigkeit
       const safeName = node.name.replace(/[^a-z0-9]/gi, '_').toLowerCase() + "_" + node.id.replace(":", "-");
